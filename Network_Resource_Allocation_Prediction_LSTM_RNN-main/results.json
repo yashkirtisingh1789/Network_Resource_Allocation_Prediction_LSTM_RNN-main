@@ -1,0 +1,36 @@
+{
+  "regression": {
+    "mae": 5.525851265716553,
+    "rmse": 7.435797155099427,
+    "r2": 0.8383150480270386
+  },
+  "classification": {
+    "accuracy": 0.9700242846094354,
+    "report": "              precision    recall  f1-score   support\n\n         Low     1.0000    0.9437    0.9711      6844\n      Medium     0.8492    1.0000    0.9184      2168\n        High     1.0000    1.0000    1.0000      3918\n\n    accuracy                         0.9702     12930\n   macro avg     0.9497    0.9812    0.9632     12930\nweighted avg     0.9747    0.9702    0.9710     12930\n",
+    "confusion_matrix": [
+      [
+        6459,
+        385,
+        0
+      ],
+      [
+        0,
+        2168,
+        0
+      ],
+      [
+        0,
+        0,
+        3918
+      ]
+    ]
+  },
+  "hyperparameters": {
+    "seq_len": 20,
+    "lstm_units": 64,
+    "dropout": 0.25,
+    "epochs_run": 27,
+    "batch_size": 256,
+    "lr": 0.001
+  }
+}
